@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.navi {
+    width: 100%;
+    height: 100px;
+    background: #3f3b38;
+}
+
+.editor {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    background: #3f3b38;
+}
+
+.editor .inst {
+    width: 750px;
+    height: 100%;
+    background: #3f3b38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editor .inst > div {
+    width: calc(100% - 5%);
+    height: calc(50% - 5.2%);
+}
+
+.editor .inst .inst-block {
+    margin-top: 2.8%;
+}
+
+.editor .inst .inst-block .inst-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d2021;
+}
+
+.editor .inst .inst-block .inst-header label {
+    color: #d3d3d3;
+    margin-left: 2%;
+}
+
+.editor .inst .inst-block .inst-preview {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.editor .inst .console-block .console-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d2021;
+}
+
+.editor .inst .console-block .console-header label {
+    color: #d3d3d3;
+    margin-left: 2%;
+}
+
+.editor .inst .console-block .console-preview {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.editor .code {
+    width: calc(100% - 750px);
+    height: 100%;
+}
+
+.editor .code .js, .editor .code .test {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3f3b38;
+}
+
+.editor .code .js {
+    height: calc(50% - 5px);
+}
+
+.editor .code .test {
+    height: calc(50% - 45px);
+}
+
+.editor .code > div > div {
+    width: calc(100% - 5%);
+    height: calc(100% - 10%);
+}
+
+.editor .code .js .js-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d2021;
+}
+
+.editor .code .js .js-header label {
+    color: #d3d3d3;
+    margin-left: 2%;
+}
+
+.editor .code .js .js-code {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.editor .code .test .test-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d2021;
+}
+
+.editor .code .test .test-header label {
+    color: #d3d3d3;
+    margin-left: 2%;
+}
+
+.editor .code .test .test-code {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.editor .code .footer {
+    width: calc(100% - 5%);
+    height: 50px;
+    background: #3f3b38;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.editor .code .footer .reset-button, .answer-button {
+    margin-left: 2.5%;
+    background: #282828;
+    width: 8%;
+    height: 65%;
+    color: #fabd2f;
+    border: 1px solid #282828;
+    border-radius: 4px;
+    transition: background .25s ease-out;
+}
+
+.editor .code .footer .attempt-button {
+    background: #282828;
+    width: 8%;
+    height: 65%;
+    color: #fabd2f;
+    border: 1px solid #fabd2f;
+    border-radius: 4px;
+    margin-left: 70.8%;
+    transition: all .25s ease-out;
+}
+
+.editor .code .footer .submit-button {
+    width: 8%;
+    height: 65%;
+    margin-left: 2.5%;
+    border: 1px solid #fabd2f;
+    border-radius: 4px;
+    background: #fabd2f;
+    color: #282828;
+    transition: all .25s ease-out;
+}
+
+.editor .code .footer .reset-button:hover, .answer-button:hover {
+    background: #1b1b1b;
+}
+
+.editor .code .footer .attempt-button:hover {
+    background: #1b1b1b;
+}
+
+.editor .code .footer .submit-button:hover {
+    background: #fdd67c;
+    border: #fdd67c solid 1px;
+}
+
+.CodeMirror {
+    font-size: 16px;
+}

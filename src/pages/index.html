@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeEvelate</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../includes/codemirror/codemirror.css">
+    <link rel="stylesheet" href="../includes/codemirror/gruvbox-dark.css">
+    <script src="../includes/codemirror/codemirror.js"></script>
+    <script src="../includes/codemirror/javascript/javascript.js"></script>
+    <script src="../includes/codemirror/html/html.js"></script>
+    <script src="../includes/codemirror/markdown/markdown.js"></script>
+</head>
+
+<body onload="gen_question()">
+    <div class="navi"></div>
+    <div class="editor">
+        <div class="inst">
+            <div class="inst-block">
+                <div class="inst-header">
+                    <label>Instructions</label>
+                </div>
+                <div class="inst-preview"></div>
+            </div>
+            <div class="console-block">
+                <div class="console-header">
+                    <label>Console</label>
+                </div>
+                <div class="console-preview"></div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="js">
+                <div class="js-block">
+                    <div class="js-header">
+                        <label>Solution:</label>
+                    </div>
+                    <div class="js-code"></div>
+                </div>
+            </div>
+            <div class="test">
+                <div class="test-block">
+                    <div class="test-header">
+                        <label>Sample Test:</label>
+                    </div>
+                    <div class="test-code"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" class="reset-button" onclick="reset()">RESET</button>
+                <button type="button" class="answer-button">ANSWER</button>
+                <button type="button" class="attempt-button" id="attempt" onclick="validate_code()">ATTEMPT</button>
+                <button type="button" class="submit-button" id="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+    <script src="../includes/std.js"></script>
+    <script src="../includes/questions.js"></script>
+    <script src="../includes/tests.js"></script>
+    <script src="../includes/inst.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
